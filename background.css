@@ -31,7 +31,7 @@ body::-webkit-scrollbar{
     left: 0;
 }
 .backgroundImage{
-    animation: fadIn 500ms ease-out;
+    animation: fadIn 800ms ease-out;
 }
 
 .horizontal_standard{
