@@ -1,0 +1,45 @@
+body {
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes fadIn{
+    0% {
+        
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+#background{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.backgroundImage{
+    animation: fadIn 500ms ease-out;
+}
+
+.horizontal_standard{
+        height: 100%;
+        width: auto;
+}
+
+.vertical_standard{
+        height: auto;
+        width: 100%;
+}

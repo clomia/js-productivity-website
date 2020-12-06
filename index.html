@@ -5,22 +5,85 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <div class="js-clock">
-        <h1 class="js-title">00:00</h1>
+    <div id="background"></div>
+    <div class="top-contant">
+        <div class="top-left-contant">
+            <label for="btnOne">
+                <img class="now-weather-icon">
+            </label>
+            <button class="see_forecast forBtn" id="btnOne">
+                <i class="fas fa-chevron-down chevron"></i>
+                <div class="A6H a-box">
+                    <div class="notice">
+                        <span class="noticeOne n-text"></span>
+                        <img class="A6H-weather-icon AH-icon">
+                    </div>
+                    <div class="inner-content">
+                        <span class="forecast-temp A6H-temp"></span>
+                        <span class="forecast-temp-feel A6H-temp-feel"></span>
+                        <span class="forecast-description A6H-description"></span>
+                    </div>
+                </div>
+                <div class="A12H a-box">
+                    <div class="notice">
+                        <span class="noticeTwo n-text"></span>
+                        <img class="A12H-weather-icon AH-icon">
+                    </div>
+                    <div class="inner-content">
+                        <span class="forecast-temp A12H-temp"></span>
+                        <span class="forecast-temp-feel A12H-temp-feel"></span>
+                        <span class="forecast-description A12H-description"></span>
+                    </div>
+                </div>
+                <div class="A24H a-box">
+                    <div class="notice">
+                        <span class="noticeThree n-text"></span>
+                        <img class="A24H-weather-icon AH-icon">
+                    </div>
+                    <div class="inner-content">
+                        <span class="forecast-temp A24H-temp"></span>
+                        <span class="forecast-temp-feel A24H-temp-feel"></span>
+                        <span class="forecast-description A24H-description"></span>
+                    </div>
+                </div>
+                <span class="lendWrong">화면을 가로로 돌려주세요</span>
+            </button>
+        </div>
+        <div class="js-weather">
+            <div class="weather__box">
+                <span class="location"></span>
+                <span class="now-temp"></span>
+                <span class="now-temp-feel"></span>
+                <span class="now-description"></span>
+            </div>
+        </div>
     </div>
-    <form class="js-form form" action="">
-        <input type="text" placeholder="이름을 알려주세요">
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm" action="">
-        <input type="text" placeholder="무엇을 해야 하나요?" />
-    </form>
-    <ul class="js-toDoList">
-    </ul>
-    <span class="js-weather"></span>
+    <div class="center-content">
+        <div class="js-clock">
+            <span class="js-timeline">00:00</span>
+            <span class="ampm"></span>
+        </div>
+        <form class="js-form form" action="">
+            <input class="naming" maxlength="18" type="text" placeholder="이름을 알려주세요">
+        </form>
+        <h4 class="js-greetings greetings"></h4>
+        <form class="js-toDoForm noneDisplay" action="">
+            <input type="text" />
+        </form>
+    </div>
+    <div class="ul-master ul-box-hidden">
+        <ul class="js-toDoList">
+        </ul>
+    </div>
+    <div class="reset">
+        <button class="resetBtn">Reset</button>
+    </div>
+    <script src="https://kit.fontawesome.com/a24ab77c03.js" crossorigin="anonymous"></script>
+    <script src="toDoScreen.js"></script>
     <script src="clock.js"></script>
     <script src="gretting.js"></script>
     <script src="todo.js"></script>

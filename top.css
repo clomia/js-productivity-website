@@ -1,0 +1,135 @@
+.top-contant {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4vmin;
+}
+.now-weather-icon{
+    width: 14vmin;
+    margin-left:3vmin;
+    margin-bottom: 3.5vmin;
+}
+.now-weather-icon:hover{
+    cursor: pointer;
+}
+.js-weather{
+    display: flex;
+}
+.weather__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 4vmin;
+    font-size: 2vmin;
+}
+.top-left-contant{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.see_forecast, .see_forecast:active, .see_forecast:hover{
+    background: transparent;
+    outline: none;
+    color: white;
+}
+
+.see_forecast{
+    border: none;
+    border: 1.5px solid white;
+    transition: all 200ms linear;
+    position: absolute;
+    top: 17%;
+    left: 17%;
+    width: 8vmin;
+    transform: rotateZ(90deg);
+    transform-origin: top left;
+    border-radius: 0.9vmin;
+}
+.forBtnWidth {
+    border: none;
+    border-top: 0.5vmin solid rgba(255, 255, 255, 0.7);
+    border-bottom: 0.5vmin solid rgba(255, 255, 255, 0.7);
+    top: 70%;
+    left: 0;
+    width: 20vmin;
+    transform: rotateZ(0deg);
+    transform-origin: top left;
+}
+
+.see_forecast:hover{
+    cursor: pointer;
+    border-color: pink;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.a-box{
+    display: none;
+}
+
+.a-box-reverse-none {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.75vmin;
+    padding-bottom: 3vmin;
+    z-index: 100;
+}
+.a-box-reverse-none:nth-child(3){
+    border-top: 0.5vmin solid rgba(255, 255, 255, 0.5);
+    border-bottom: 0.5vmin solid rgba(255, 255, 255, 0.5);
+}
+
+
+
+.inner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+
+.notice {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.AH-icon {
+    width: 50%;
+    height: 50%;
+}
+
+.n-text{
+    font-size: 2.2vmin;
+    text-align: start;
+}
+
+.lendWrong{
+    display: none;
+}
+
+@media (orientation: portrait) {
+    .lendWrong{
+        display: block;
+    }
+    .see_forecast{
+        width: 30vmax;
+        left: 8vmin;
+        top: 70%;
+        font-size: 2vmin;
+        padding-bottom: 2vmin;
+    }
+    .forBtnWidth{
+        left: -10%;
+        border: none;
+        border-top: 0.5vmin solid rgba(255, 255, 255, 0.7);
+        border-bottom: 0.5vmin solid rgba(255, 255, 255, 0.7);
+        top: 70%;
+        left: 0;
+        width: 20vmin;
+        transform: rotateZ(0deg);
+        transform-origin: top left;
+    }
+}

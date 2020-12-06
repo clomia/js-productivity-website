@@ -1,0 +1,30 @@
+.resetBtn,.resetBtn:hover {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.reset{
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+}
+
+.resetBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vmin;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1vmin;
+    font-size: 1.5vmin;
+    border: 2px solid rgba(255, 255, 255, 0.0);
+    transition: all 100ms linear;
+}
+
+.resetBtn:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 2vmin whitesmoke;
+    border: 2px solid white;
+}

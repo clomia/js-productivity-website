@@ -1,48 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+@import "background.css";
+@import "todo.css";
+@import "top.css";
+@import "bottom.css";
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    color: #34495e;
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    transition: .backgroundImage; 
-}
-
-::-webkit-scrollbar{
-    display: none;
-}
-
-.form,.greetings{
-    display: none;
-}
-
-.showing {
-    display: block;
-}
-
-ul {
     padding: 0;
-}
-li {
+    margin: 0;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
     display: flex;
-}
-
-
-@keyframes fadIn{
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    50% {
-        transform: none;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-.backgroundImage{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    animation: fadIn 2s ease-out;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 100vh;
 }
