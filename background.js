@@ -20,23 +20,10 @@ function genRandom() {
     const number = Math.ceil(Math.random() * IMG_NUMBER);
     return number;
 }
-function sizeSetting(event) {
-    if (windowHeight * 16 <= windowWidth * 9) {
-        imageNode.classList.remove("horizontal_standard")
-        imageNode.classList.add("vertical_standard")
-    } else {
-        imageNode.classList.remove("vertical_standard")
-        imageNode.classList.add("horizontal_standard");
-    }
-}
 
 function init() {
     const randomNumber = genRandom();
     paintImage(randomNumber);
-    window.addEventListener("resize", function (event) {
-        location.reload();
-    });
-    window.addEventListener("load", sizeSetting);
 }
 
 //Math.random() 0~1까지니까 곱해지는 숫자가 최대값이 된다 + ceil
