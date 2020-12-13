@@ -34,3 +34,13 @@ body::-webkit-scrollbar{
     animation: fadIn 800ms ease-out;
     height: 100vmax;
 }
+
+.widthfix{
+    width: 100%;
+    height: auto;
+}
+
+.hightfix{
+    width: auto;
+    height: 100%;
+}
